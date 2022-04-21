@@ -5,6 +5,8 @@
  */
 package nsat;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Alumno

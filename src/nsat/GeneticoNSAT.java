@@ -51,16 +51,15 @@ public class GeneticoNSAT {
         this.poblacionActual = new Poblacion(ind);
        // pedimos el mejor a la poblacion 
        mejor  = this.poblacionActual.getMejor();
-   
-       
-        System.out.println(g+": "+mejor.getFitness());
-//        if(mejor.getFitness()==550){
-//            System.out.println(Arrays.toString(mejor.getGenotipo()));
-//        }
+       System.out.println(g+": "+mejor.getFitness());
     }
     
     System.out.println(mejor.getFitness());
     System.out.println(Arrays.toString(mejor.getGenotipo()));
+    }
+
+    public Individuo getMejor() {
+        return this.poblacionActual.getMejor();
     }
 
     private void mejor() {
